@@ -1,0 +1,29 @@
+.my-admin-view-img{
+    width: 141px;
+    height: 141px;
+    object-fit: cover;
+}
+.collapsed .my-open{
+    display: inline-block;
+}
+.my-open{
+    display: none;
+}
+.collapsed .my-close{
+    display: none;
+}
+.my-close{
+    display: inline-block;
+}
+.my-pointer{
+    cursor: pointer;
+}
+.my-table{
+    th:first-child{
+        padding-left: 0px;
+    }
+    td:last-child{
+        padding-right: 0;
+    }
+    
+}

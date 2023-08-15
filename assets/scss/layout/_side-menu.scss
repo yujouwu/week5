@@ -1,0 +1,35 @@
+.my-nav {
+    min-width: 296px;
+    min-height: 100vh;
+    position: fixed;
+
+    .material-icons {
+        vertical-align: bottom;
+        margin-right: 16px;
+    }
+}
+
+.my-nav-logo {
+    margin: 32px 32px 22px 32px;
+}
+
+.my-side-nav {
+    position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &:hover {
+        background-color: $dark-bg-subtle;
+    }
+}
+
+.my-side-nav.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 40px;
+    border-left: 4px solid #198754;
+
+}
