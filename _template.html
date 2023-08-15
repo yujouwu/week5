@@ -17,8 +17,8 @@
 <!-- Bootstrap CSS -->
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->    <title>Admin</title>
-  <script type="module" crossorigin src="/week5/assets/main-5e668bc0.js"></script>
-  <link rel="stylesheet" href="/week5/assets/main-c0e502d6.css">
+  <script type="module" crossorigin src="/week5/assets/main-6ff69708.js"></script>
+  <link rel="stylesheet" href="/week5/assets/main-d66e338b.css">
 </head>
 <body>
     
@@ -30,7 +30,17 @@
   <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
   <script>
     ClassicEditor
-      .create(document.querySelector('#editor'))
+      .create(document.querySelector('#editor1'))
+      .then(editor => {
+        console.log(editor);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+
+      ClassicEditor
+      .create(document.querySelector('#editor2'))
       .then(editor => {
         console.log(editor);
       })
